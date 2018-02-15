@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
+
 
 .main-width{
   width: 90%;
@@ -19,7 +21,7 @@
   background-image: url('../images/main-banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   padding-bottom: 56.25%;
   color: white;
 
@@ -86,6 +88,7 @@
     .bubble{
       width: 100vw;
       height: 262px;
+      max-width: 111.1%;
       display: flex;
       flex-direction: row;
     }
@@ -161,6 +164,194 @@
         margin-right: 2%;
         margin-left: 2%;
       }
+    }
+  }
+}
+
+
+//Sekcja z mikserem
+
+.section-three{
+  width: 100%;
+  margin-top: 100px;
+  height: 500px;
+  background-image: url('../images/banner-paralax.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: lightgrey;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-width{
+    text-align: center;
+    .section-three-name{
+      font-size: 50px;
+    }
+  }
+}
+
+//Sekcja z teamem
+
+.section-four{
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+
+  .section-four-team{
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .team-members{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+
+    .member-picture-one{
+      background-image: url('../images/photo1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      width: 100%;
+    }
+
+    .member-picture-one:after{
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+
+    .member-picture-two{
+      background-image: url('../images/photo2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      width: 100%;
+    }
+
+    .member-picture-two:after{
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+
+    .member-picture-three{
+      background-image: url('../images/photo3.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      width: 100%;
+    }
+
+    .member-picture-three:after{
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+
+    .member-picture-four{
+      background-image: url('../images/photo4.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      width: 100%;
+    }
+
+    .member-picture-four:after{
+      content: "";
+      padding-bottom: 100%;
+      display: block;
+    }
+
+
+    &:not(:first-child){
+      margin-left: 5%;
+    }
+
+    h1{
+      text-align: center;
+      padding-top: 10%;
+      padding-bottom: 5%;
+    }
+    p{
+      text-align: center;
+      padding-bottom: 5%;
+    }
+  }
+}
+
+//sekcja z formularzem
+
+.section-five{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  padding-bottom: 5%;
+
+  .section-five-name{
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+
+    input{
+      width: 60%;
+      height: 40px;
+      margin-top: 3%;
+      border-radius: 8px;
+      border: 2px solid black;
+
+    }
+    textarea{
+      margin-top: 3%;
+      border-radius: 8px;
+      border: 2px solid black;
+      margin-bottom: 3%;
+    }
+
+    .submit-form{
+      display: flex;
+      flex-direction: row;
+      .button{
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+
+//stopka
+
+.footer{
+  background-color: darkgrey;
+
+  .main-width{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 5%;
+    .left-container{
+      margin-right: 5%;
     }
   }
 }
