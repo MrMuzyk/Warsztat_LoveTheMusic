@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-width{
+  width: 90%;
+  margin: auto;
+}
+
+//Sekcja z logo i gitara
+
+.section-one{
+
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+  z-index: 1;
+  height: 1000px;
+  background-image: url('../images/main-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 56.25%;
+  color: white;
+
+
+  nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+
+    .small-logo{
+      margin-right: auto;
+    }
+
+    .menu{
+      display: flex;
+      flex-wrap: nowrap;
+      div{
+        padding-left: 10px;
+      }
+    }
+  }
+
+.one-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .big-logo{
+
+        width: 50%;
+        background-image: url('../images/main-logo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 56.25%;
+      }
+      .logo-description{
+        text-align: center;
+        width: 50%;
+        margin-top: -15%;
+        margin-bottom: 5%;
+      }
+      .button{
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: black;
+      }
+
+}
+
+
+//Druga sekcja z obrazkami
+
+.section-two{
+  width: 100%;
+
+  .main-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .bubble{
+      width: 100vw;
+      height: 262px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .fill-left{
+      background-color: white;
+      margin-top: -4.99%;
+      width: 40%;
+      height: 262px;
+      margin-right: -5%;
+    }
+
+    .fill-right{
+      background-color: white;
+      margin-top: -4.99%;
+      width: 40%;
+      height: 262px;
+      margin-left: -5%;
+    }
+
+  .read-more{
+    height: 262px;
+    width: 30%;
+    background-image: url('../images/banner-bottom.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    margin-top: -5%;
+
+    }
+
+    .two-title{
+      margin-top: -10%;
+      margin-bottom: 5%;
+    }
+
+    .pictures{
+      display: flex;
+      flex-direction: row;
+
+      .picture-one{
+        background-image: url('../images/img1.png');
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-size: contain;
+      }
+
+      .picture-two{
+        background-image: url('../images/img2.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 400px;
+        width: 100%;
+      }
+
+      .picture-three{
+        background-image: url('../images/img3.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 400px;
+        width: 100%;
+      }
+
+      .small-block{
+        width: 32%;
+      }
+
+      .middle-one{
+        margin-right: 2%;
+        margin-left: 2%;
+      }
+    }
+  }
+}
